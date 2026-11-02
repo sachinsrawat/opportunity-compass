@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover internships and scholarships that match your goals.">
+    <title>Opportunity Compass | Find Your Next Opportunity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <a href="#" class="brand">
+            <span class="brand-icon">✦</span>
+            <span>opportunity<span class="brand-light">compass</span></span>
+        </a>
+
+        <p class="nav-label">WORKSPACE</p>
+
+        <nav class="navigation">
+            <a href="#dashboard" class="nav-item active">
+                <span>▦</span> Dashboard
+            </a>
+            <a href="#opportunities" class="nav-item">
+                <span>⌕</span> Explore opportunities
+            </a>
+            <a href="#saved" class="nav-item">
+                <span>♡</span> Saved opportunities
+            </a>
+            <a href="#applications" class="nav-item">
+                <span>▤</span> My applications
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="profile-avatar">S</div>
+            <div>
+                <strong>Student workspace</strong>
+                <p>Your next chapter starts here.</p>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content" id="dashboard">
+        <header class="topbar">
+            <span class="breadcrumb">Workspace / Dashboard</span>
+            <span class="status-badge"><span class="status-dot"></span> Your future, in focus</span>
+        </header>
+
+        <section class="welcome-section">
+            <div>
+                <p class="eyebrow">YOUR OPPORTUNITY HUB</p>
+                <h1>Find your next <span>big thing.</span></h1>
+                <p class="welcome-text">
+                    Discover opportunities, track your progress, and take the next step
+                    toward your goals.
+                </p>
+            </div>
+            <div class="welcome-decoration" aria-hidden="true">✳</div>
+        </section>
+
+        <section class="stats-grid" aria-label="Opportunity statistics">
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Opportunities found</span>
+                    <span class="stat-icon purple">⌕</span>
+                </div>
+                <strong id="totalCount">0</strong>
+                <p>Available to explore</p>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Saved for later</span>
+                    <span class="stat-icon pink">♡</span>
+                </div>
+                <strong id="savedCount">0</strong>
+                <p>Worth a closer look</p>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Applications</span>
+                    <span class="stat-icon green">↗</span>
+                </div>
+                <strong id="appliedCount">0</strong>
+                <p>Opportunities pursued</p>
+            </article>
+        </section>
+
+        <section class="opportunities-section" id="opportunities">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">HANDPICKED FOR YOUR JOURNEY</p>
+                    <h2>Explore opportunities</h2>
+                </div>
+                <span class="demo-label">DEMO DATA</span>
+            </div>
+
+            <div class="search-panel">
+                <label class="search-box">
+                    <span>⌕</span>
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Search by title, organization, or skill..."
+                        aria-label="Search opportunities"
+                    >
+                </label>
+
+                <select id="typeFilter" aria-label="Filter by opportunity type">
+                    <option value="all">All opportunities</option>
+                    <option value="Internship">Internships</option>
+                    <option value="Scholarship">Scholarships</option>
+                </select>
+
+                <select id="workFilter" aria-label="Filter by work arrangement">
+                    <option value="all">All work modes</option>
+                    <option value="Remote">Remote</option>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="On-site">On-site</option>
+                </select>
+            </div>
+
+            <div class="results-line">
+                <span id="resultsCount">Loading opportunities...</span>
+                <button id="resetFilters" class="text-button" type="button">Reset filters</button>
+            </div>
+
+            <div id="opportunityGrid" class="opportunity-grid"></div>
+
+            <div id="emptyState" class="empty-state" hidden>
+                <span>⌕</span>
+                <h3>No matching opportunities</h3>
+                <p>Try another search or reset your filters.</p>
+            </div>
+        </section>
+
+        <section class="applications-section" id="applications">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">KEEP MOVING FORWARD</p>
+                    <h2>Your application tracker</h2>
+                </div>
+            </div>
+
+            <div class="tracker-card">
+                <div class="tracker-intro">
+                    <span class="tracker-icon">↗</span>
+                    <div>
+                        <h3>Every application is progress.</h3>
+                        <p>Save an opportunity and mark it as applied to start tracking it here.</p>
+                    </div>
+                </div>
+                <div id="applicationList" class="application-list">
+                    <p class="tracker-empty">Your application tracker is ready for you.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <span>Opportunity Compass</span>
+            <span>Explore thoughtfully. Apply confidently.</span>
+        </footer>
+    </main>
+</body>
+</html>
+```
